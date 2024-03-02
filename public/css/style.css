@@ -29,7 +29,7 @@ body{
     gap: 3px;
     width: 40px;
     height: 40px;
-    z-index: 1000;
+    z-index: 10;
     margin: 26px 10px;
 }
 .head .burger div{
@@ -275,7 +275,7 @@ body{
         background:#00000000;
         position: absolute;
         width: 100%;
-        z-index: 1000;
+        z-index: 10;
         box-shadow: none;
     }
     .head ul{
@@ -298,6 +298,14 @@ body{
     }
     .sect1 h1{
         font-size: 26px;
+    }
+    .sign-container .card{
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        z-index: 1000;
     }
 }
 @media (max-width: 550px){
