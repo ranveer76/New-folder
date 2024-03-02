@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zillow</title>
+        <link rel="stylesheet" href="./public/css/style.css">
+        <script src="./public/js/main.js" defer></script>
+    </head>
+    <body>
+        <div class="head">
+            <ul class="first">
+                <li><a href="/">Buy</a></li>
+                <li><a href="/">Rent</a></li>
+                <li><a href="/">Sell</a></li>
+                <li><a href="/">Home Loans</a></li>
+                <li><a href="/">Agent Finder</a></li>
+            </ul>
+            <a href="/"><img src="./public/img/zillow.png" alt="Zillow"></a>
+            <ul class="second">
+                <li><a href="/">Manage Rentals</a></li>
+                <li><a href="/">Advertise</a></li>
+                <li><a href="/">Help</a></li>
+                <li><button type="button" onclick="sign_page()">Sign in</button></li>
+            </ul>
+        </div>
+        <div class="sign-container">
+            <div class="card">
+                <div class="cross">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <h2>Sign in or register to receive personalized recommendations</h2>
+                <div class="sign-nav">
+                    <a href="" class="sign-active">Sign in</a>
+                    <a href="">New account</a>
+                </div>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    <button type="button" id="sign-in">Sign in</button>
+                    <button type="button" id="forgot">Forgot your password?</button>
+                </form>
+            </div>
+        </div>
+        <div class="sect1">
+            <div>
+                <h1>Agents. Tours. Loans. Homes.</h1>
+                <form>
+                    <input type="text" name="search" id="search-bar" autocomplete="off"
+                        placeholder="Enter an address, neighborhood, city, or ZIP code">
+                    <button type="button" id="search" title="search">
+                        <img src="./public/img/search.png" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
