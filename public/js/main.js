@@ -15,11 +15,19 @@ var menu = document.getElementsByClassName('burger')[0];
 var nav = document.getElementsByClassName('head')[0].getElementsByTagName('ul');
 
 menu.addEventListener('click', function(){
-    if(nav[0].style.display == 'flex'){
-        nav[0].style.display = 'none';
-        nav[1].style.display = 'none';
-    }else{
+    nav[0].style.display = nav[0].style.display === 'flex' ? 'none' : 'flex';
+    nav[1].style.display = nav[1].style.display === 'flex' ? 'none' : 'flex';
+    menu.classList.toggle('burger-active');
+});
+
+window.addEventListener('resize', function(){
+    if(window.innerWidth > 900){
         nav[0].style.display = 'flex';
         nav[1].style.display = 'flex';
-    } menu.classList.toggle('burger-active');
+        menu.classList.remove('burger-active');
+    }
+    else{
+        nav[0].style.display = 'none';
+        nav[1].style.display = 'none';
+    }
 });
