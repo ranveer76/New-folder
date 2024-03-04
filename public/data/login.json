@@ -1,0 +1,10 @@
+[
+{
+    "username": ["admin","admin@gmial.com","123456789"],
+    "password": "admin"
+},
+{
+    "username": ["user","user@gmial.com","098765432"],
+    "password": "user"
+}
+]

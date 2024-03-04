@@ -28,7 +28,7 @@
                     <li><a href="#">Advertise</a></li>
                     <li><a href="#">Help</a></li>
                 </ul>
-                <button type="button" onclick="sign_page()">Sign in</button>
+                <button type="button" onclick="sign_page()" id="login">Sign in</button>
             </div>
         </div>
         <div class="sign-container">
@@ -37,18 +37,20 @@
                     <div class="line1"></div>
                     <div class="line2"></div>
                 </div>
-                <h2>Sign in or register to receive personalized recommendations</h2>
+                <h2>Welcome to Zillow</h2>
                 <div class="sign-nav">
-                    <a href="" class="sign-active">Sign in</a>
-                    <a href="">New account</a>
+                    <a onclick="signacco()" class="sign-active" id="signacco">Sign in</a>
+                    <a onclick="newacco()" id="newacco">New account</a>
                 </div>
-                <form>
+                <form id="sign-form">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" placeholder="Enter email" required>
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter Password" required>
-                    <button type="button" id="sign-in">Sign in</button>
-                    <button type="button" id="forgot">Forgot your password?</button>
+                    <button type="button" 
+                    onclick="login()"
+                    id="sign-in">Sign in</button>
+                    <button type="button" id="forgot" onclick="forgot_pass()">Forgot your password?</button>
                 </form>
             </div>
         </div>
@@ -62,6 +64,89 @@
                         <img src="./public/img/search.png" alt="">
                     </button>
                 </form>
+            </div>
+        </div>
+        <div class="sect2">
+            <div class="sect2-1">
+                <div  class="sect2-nav">
+                    <h2>Homes For You</h2>
+                    <div class="arrows">                    <div class="left"
+                        onclick="left_slide()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="right"onclick="right_slide()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                </div>
+                <p>Based on home you recently viewed</p>
+                <div class="list">
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/house1.jpg" alt="">
+                        <div class="card-info">
+                            <h3>$1,000,000</h3>
+                            <p>3 bds | 2 ba | 1,070 sqft | Active</p>
+                            <address>9425 18th Avenue SW, Seattle, WA, 98106</address>
+                            <div class="id-no.">MLS ID #2204745, Katy Cooper. Listing provided by NWMLS</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
